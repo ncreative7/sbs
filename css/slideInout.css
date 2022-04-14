@@ -1,0 +1,45 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  /* 라이브러리 */
+  .cell{
+    float: left ;
+  }
+  .row::after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+  /* 스타일 */
+  .tv{
+    overflow: hidden ; 
+    width: 900px;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .film{
+    width: 3600px;
+    position: relative ;
+    top: 0px ;
+    left: 0px ;
+    transition: 0.5s ;
+  }
+  .photo{
+    width: 900px;
+    height: 360px;
+  }
+  .photo1{
+    background-color: red;
+  }
+  .photo2{
+    background-color: blue;
+  }
+  .photo3{
+    background-color: yellow;
+  }
+  .photo4{
+    background-color: green;
+  }
