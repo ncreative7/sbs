@@ -1,5 +1,10 @@
 $(document).ready(function(){
-  
+    
+    $('.slider').on('init', function(event, slick){//   슬라이더가 만들어지기전에 시작해라 init
+      $(".content").eq(1).addClass("active")
+      $(".dot").eq(0).addClass("active")
+    });
+    
     $(".slider").slick({
       dots: true ,
       // prevArrow: '<div class="left-btn"></div>' ,
@@ -59,11 +64,18 @@ $(document).ready(function(){
       $(".dot5").text( nextSlide+1 + " / 4")
       $(".dots > .dot").eq(nextSlide).addClass("active")
       $(".dots > .dot").eq(nextSlide).siblings().removeClass("active")
+      
+      $(".content").removeClass("active")
+      
     });
   
     $('.slider').on('afterChange', function(event, slick, currentSlide){
-      console.log("에프터체인지");
+      console.log(currentSlide);
+      
+      $(".content").eq(currentSlide+1).addClass("active")
+      
+  
+      
     });
-    
-    
+  
   })
