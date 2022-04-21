@@ -6,6 +6,123 @@ body{
     margin: 0 auto;
     position: relative ;
   }
+  .slider-wrap > .slider .content{ /*img 및 text 정렬*/
+    position: relative ;
+  }
+  .slider-wrap > .slider .content > img{
+    width: 100%;
+    display: block;
+  }
+  .slider-wrap > .slider .content > .txt-box{ /*hn 정렬*/
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform:translate(-50%,-50%) ;
+    text-align: center ;
+  }
+  .slider-wrap .slick-prev{ /*slick 자체 버튼*/
+    left: 0  ;
+    z-index: 99 ;
+  }
+  .slider-wrap .slick-next{  /*slick 자체 버튼*/
+    right: 0 ;
+    z-index: 99 ;
+  }
+  .slider-wrap .slick-dots{ /*하단의 원 버튼*/
+    bottom: 0 ;
+  }
+  .slider-wrap .left-btn{ /*메소드로 자체 제작한 div 버튼*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute ;
+    left: 0 ;
+    top: 50% ;
+    z-index: 999 ;
+    transform:translatey(-50%) ;
+  }
+  .slider-wrap .right-btn{ /*메소드로 자체 제작한 div 버튼*/ 
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute ;
+    right: 0 ;
+    top: 50% ;
+    z-index: 999 ;
+    transform:translatey(-50%) ;
+  }
+  
+  .state-btn{ /*play, pause 버튼*/
+     width: 100px;
+    line-height: 100px ;
+    background-color: #ddf;
+    text-align: center ;
+    position: absolute ;
+    left: 50% ;
+    transform: translatex(-50%) ;
+  }
+  .state-btn > div{ /*play, pause 버튼 active 상태가 아니면 안보이도록*/
+    display: none ;
+  }
+  .state-btn > div.active{ /*play, pause 버튼 active 상태면 보이도록*/
+    display: block ;
+  }
+
+  .slider-wrap .slick-dots li{ /*원 버튼 대신 텍스트로 bottom 버튼 생성*/
+    width: 25% ;
+    height: auto ;
+    margin: 0 ;
+    background-color: #fff;
+  }
+  
+  .slider-wrap .slick-dots li.slick-active{  /*bottom 텍스트 버튼 active 상태 다르게*/
+    background-color: black;
+    color: white ; 
+  }
+
+  .dots { /*사진 숫자 슬라이드 버튼 wrap 위치 설정*/
+    display: flex ;
+    position: absolute ;
+    bottom: -250px ;
+    width: 100%;
+    justify-content: center ;
+  }
+
+  .dots > .dot{ /*사진 숫자 슬라이드 버튼*/
+    width: 100px;
+    height: 100px;
+  }
+
+  .dots > .dot.active{ /*사진 숫자 슬라이드 버튼 active 상태 다르게*/
+    background-color: black;
+  }
+  .dots > .dot1{
+    background-color: #ccf;
+  }
+  .dots > .dot2{
+    background-color: #cff;
+  }
+  .dots > .dot3{
+    background-color: #cfc;
+  }
+  .dots > .dot4{
+    background-color: #fcc;
+  }
+  .dots > .dot5{ /*사진 숫자 슬라이드 버튼 현재 위치 표기 ex) 2/4*/
+    background-color: #ffc;
+    text-align: center ;
+    line-height: 100px ;
+  }
+
+/*
+body{
+    background-color: #ddd;
+  }
+  .slider-wrap{
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative ;
+  }
   .slider-wrap > .slider .content{
     position: relative ;
   }
@@ -19,6 +136,35 @@ body{
     left: 50% ;
     transform:translate(-50%,-50%) ;
     text-align: center ;
+  }
+  .slider-wrap > .slider .content > .txt-box > h2{
+    transform:translateY(30px) ;
+    opacity: 0 ;
+    transition: 0.5s ;
+  }
+  .slider-wrap > .slider .content.active > .txt-box > h2{
+    transform:translateY(00px) ;
+    opacity: 1 ;
+  }
+  .slider-wrap > .slider .content > .txt-box > h3{
+    transform:translateY(30px) ;
+    opacity: 0 ;
+    transition: 0.5s ;
+    transition-delay: 0.2s ;
+  }
+  .slider-wrap > .slider .content.active > .txt-box > h3{
+    transform:translateY(00px) ;
+    opacity: 1 ;
+  }
+  .slider-wrap > .slider .content > .txt-box > h4{
+    transform:translateY(30px) ;
+    opacity: 0 ;
+    transition: 0.5s ;
+    transition-delay: 0.4s ;
+  }
+  .slider-wrap > .slider .content.active > .txt-box > h4{
+    transform:translateY(00px) ;
+    opacity: 1 ;
   }
   .slider-wrap .slick-prev{
     left: 0  ;
@@ -109,3 +255,4 @@ body{
     text-align: center ;
     line-height: 100px ;
   }
+*/
