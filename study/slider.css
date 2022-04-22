@@ -1,0 +1,29 @@
+.section > h1{
+    text-align: center ;
+  }
+  .section{
+    max-width: 1200px ;
+    margin: 0 auto;
+  }
+  .section > .slider-wrap{
+    margin: 0 -20px ;
+  }
+  .section > .slider-wrap > .slider .content {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius:15px ;
+    overflow: hidden ;
+  }
+  .section > .slider-wrap > .slider .content > .img-box{
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .section > .slider-wrap > .slider .content > .txt-box{
+    background-color: skyblue;
+    padding: 20px ;
+    box-sizing: border-box ;
+    color: #eed ;
+  }

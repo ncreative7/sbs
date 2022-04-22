@@ -1,0 +1,12 @@
+.slider-wrap{
+    max-width: 800px ;
+    margin: 0 auto;
+  }
+  
+  .slider-wrap > .slider .content > .img-box{
+    padding-bottom: 62.5% ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black ;
+  }
