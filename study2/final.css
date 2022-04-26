@@ -1,0 +1,134 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul , li {
+    list-style: none ;
+  }
+  a{
+    color: inherit ;
+    text-decoration: none ;
+  }
+  /* 라이브러리 */
+  .cell{
+    float: left ;
+  }
+  .row::after{
+    clear: both;
+    content: "";
+    display: block ;
+  }
+  /* 스타일 */
+  .main-visual{
+    max-width: 800px ;
+    margin: 0 auto;
+  }
+  .main-visual > .slide-list{
+    position: relative ;
+  }
+  .main-visual > .slide-list > .slide{
+    width: 50%;
+  }
+  .main-visual > .slide-list > .slide .content{
+    position: relative ;
+  }
+  .main-visual > .slide-list > .slide .content > .img-box {
+    width: 100% ;
+    padding-bottom: 50% ;
+    background-size: cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+  }
+  .main-visual > .slide-list > .left-slide .content01 > .img-box {
+    background-color: #dac ;
+  }
+  .main-visual > .slide-list > .left-slide .content02 > .img-box {
+    background-color: #acd ;
+  }
+  .main-visual > .slide-list > .left-slide .content03 > .img-box {
+    background-color: #dca ;
+  }
+  .main-visual > .slide-list > .left-slide .content04 > .img-box {
+    background-color: #adc ;
+  }
+  
+  .main-visual > .slide-list > .right-slide .content01 > .img-box {
+    background-image: url( https://health.chosun.com/site/data/img_dir/2021/07/26/2021072601445_0.jpg ) ;
+  }
+  .main-visual > .slide-list > .right-slide .content02 > .img-box {
+    background-image: url( http://image.dongascience.com/Photo/2017/03/14900752352661.jpg ) ;
+  }
+  .main-visual > .slide-list > .right-slide .content03 > .img-box {
+    background-image: url( https://img.animalplanet.co.kr/news/2020/07/15/700/e05t9x1o0e3trklpwrr3.jpg ) ;
+  }
+  .main-visual > .slide-list > .right-slide .content04 > .img-box {
+    background-image: url( https://img.hankyung.com/photo/202109/01.27511773.1.jpg ) ;
+  }
+  
+  .main-visual > .slide-list > .left-slide .content > .txt-box {
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%) ;
+  }
+  .main-visual > .slide-list > .btn-box{
+    position: absolute ;
+    left: 0 ;
+    bottom: 0 ;
+    line-height: 50px ;
+    text-align: center ;
+  }  
+  .main-visual > .slide-list > .btn-box > div{
+    width: 50px;
+    height: 50px;
+    background-color: white ;
+    border: 1px solid black ;
+  }
+  .main-visual > .slide-list > .btn-box > .auto-btn > div{
+    width: 100%;
+    line-height: 50px ;
+    text-align: center ;
+    display: none ;
+  }
+  .main-visual > .slide-list > .btn-box > .auto-btn > div.active{
+    display: block ;
+  }
+  
+  .main-visual > .progress{
+    width: 100%;
+    height: 20px;
+    background-color: pink ;
+  }
+  .main-visual > .progress::after{
+    content: "";
+    display: block ;
+    width: 0%;
+    height: 100% ;
+    background-color: black ;
+  }
+  .main-visual > .progress.active::after{
+    width: 100%;
+    transition: 3s ;
+  }
+  .main-visual > .dots-box > .dots{
+    width: 25%;
+    text-align: center ;
+    border: 2px solid black ;
+    box-sizing: border-box ;
+    line-height: 40px ;
+    position: relative ;
+  }
+  .main-visual > .dots-box > .dots::after{
+    content: "";
+    display: block ;
+    width: 0%;
+    height: 5px;
+    background-color: red ;
+    position: absolute ;
+    bottom: 0 ;
+  }
+  .main-visual > .dots-box > .dots.active::after{
+    width: 100%;
+    transition: 3s ;
+  }

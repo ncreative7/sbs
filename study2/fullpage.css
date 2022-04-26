@@ -1,0 +1,87 @@
+.section01{
+    background-color: #eef;
+  }
+  .section02{
+    background-color: #eff;
+  }
+  .section03{
+    background-color: #efe;
+  }
+  .section04{
+    background-color: #fee;
+  }
+  .slide01{
+    background-color: #aac;
+  }
+  .slide02{
+    background-color: #aaf;
+  }
+  
+  .fullpage > .section01 > .content-wrap > h1{
+    text-align: center ;
+  }
+  .fullpage > .section01 > .content-wrap > .content-box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex ;
+  }
+  .fullpage > .section01 > .content-wrap > .content-box > .w50-box{
+    width: 50%;
+    height: 300px;
+    background-color: gray;
+  }
+  .fullpage > .section01 > .content-wrap > .content-box > .w20-box{
+    width: 20%;
+    height: 300px;
+    background-color: yellow;
+  }
+  .fullpage > .section01 > .content-wrap > .content-box > .w30-box{
+    width: 30%;
+    height: 300px;
+    background-color: green;
+  }
+  .nav-box{
+    display: flex;
+    justify-content: center ;
+    position: fixed ;
+    z-index: 999999 ;
+    width: 100%;
+    background-color: white;
+  }
+  .nav-box > .nav{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .footer{
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+  }
+  .fullpage .fp-watermark{
+    display:none !important ;
+  }
+  .section04 > .move-box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute ;
+    top: 20% ;
+    right: -20% ;
+    transition: 0.5s ;
+  }
+  .section04 > .move-box.active{
+    right: 20% ;
+  }
+  .section04 > .opci-box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute ;
+    bottom: 20% ;
+    left: 20% ;
+    opacity: 0 ;
+    transition: 0.5s ;
+  }
+  .section04 > .opci-box.active{
+    opacity : 1 ;
+  } 
