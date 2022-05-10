@@ -1,0 +1,25 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.view{
+    width: 800px; height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contain{
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.box{
+    width: 800px;
+    height: 300px;
+}
+
+.box1{background-color: red;}
+.box2{background-color: orange;}
+.box3{background-color: yellow;}
+.box4{background-color: blue;}

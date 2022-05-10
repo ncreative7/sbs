@@ -1,0 +1,46 @@
+*{margin: 0 auto; padding: 0}
+body{background-color: gray;}
+.wrap{max-width: 800px;}
+.content{position: relative;}
+.content > .photo{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 62.5% ; 
+    /* 사진 비율에 맞춰 반응형으로 크기 조절 */
+}
+.content > .photo1{background-image: url(http://image.nongshim.com/non/pro/1634090914592.jpg);}
+.content > .photo2{background-image: url(https://sitem.ssgcdn.com/19/36/33/item/0000008333619_i1_1200.jpg);}
+.content > .photo3{background-image: url(https://cphoto.asiae.co.kr/listimglink/1/2021032610305850951_1616722259.png);}
+
+.content > .txt-wrap{
+    position: absolute;
+    top: 80%; left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+.content > .txt-wrap > h2{
+    transform:translateY(30px) ;
+    opacity: 0 ;
+    transition: 0.5s ;
+}
+
+.content.active > .txt-wrap > h2{
+    transform:translateY(00px) ;
+    opacity: 1 ;
+}
+
+.content > .txt-wrap > h4{
+    transform:translateY(30px) ;
+    opacity: 0 ;
+    transition: 0.5s ;
+    transition-delay: 0.2s ;
+}
+
+.content.active > .txt-wrap > h4{
+    transform:translateY(00px) ;
+    opacity: 1 ;
+}
